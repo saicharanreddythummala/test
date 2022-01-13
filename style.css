@@ -1,5 +1,12 @@
 body{
   background-color: #ccd1e4af;
+  margin: 0;
+  position: relative;
+}
+@media (max-width: 460px), (max-height: 440px){
+  body{
+    min-width: 320px;
+  }
 }
 
 #main{
@@ -12,6 +19,7 @@ body{
 @media (max-width: 460px){
    #main {
       margin: 0;
+      min-width: none;
     }
   }
   #title{
@@ -19,18 +27,23 @@ body{
     background: #CCD1E4;
     font-size: 30px;
     padding: 10px;
-    margin: 0 40px;
+    margin: 0;
   }
   #image{
     display: block;
-    width: 30%;
-    height: auto;
+    width: 120px;
+    height: 175px;
     margin: 0px auto;
   }
- 
+  @media (max-width: 460px){
+    #image{
+      width: 40%;
+    }
+  }
   #img-div{
     padding: 10px;
     background: white;
+    margin: 0;
   }
   #img-caption{
     text-align: center;
